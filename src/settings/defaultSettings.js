@@ -30,15 +30,10 @@ const updateLangsWhenChangeTranslationApi = () => {
 
   const mappingLang = lang => {
     switch (lang) {
-      case "en": return "en-US";
-      case "en-US":
+      case "en-US": return "en";
       case "en-GB": return "en";
-      case "zh": return "zh-CN";
       case "zh-CN":
       case "zh-TW": return "zh";
-      case "pt": return "pt-PT";
-      case "pt-PT":
-      case "pt-BR": return "pt";
       default: return currentLangs[0];
     }
   };
